@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "*.js": "javascriptreact",
+    "__locale": "cpp",
+    "locale": "cpp",
+    "iostream": "cpp"
+  }
+}

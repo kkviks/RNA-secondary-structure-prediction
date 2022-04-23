@@ -1,0 +1,20 @@
+/**
+
+@mainpage CS-F364 Design and Analysis of Algorithms ( Assignment 2) 
+
+ @author Vikas Sheoran (f20180847@hyderabad.bits-pilani.ac.in)
+ @author Ritika Garg (f20180256@hyderabad.bits-pilani.ac.in)
+ @author Akshat Goyal (f20180864@hyderabad.bits-pilani.ac.in)
+ @author Vastav Ratra (f20180903@hyderabad.bits-pilani.ac.in)
+
+Objective: The objective of this assignment is to implement the RNA secondary structure prediction
+algorithm described in the class.
+
+Any additional comments you want to make can go here.  Did you like the
+project?  Was it too hard, too easy?  My TA smells bad.  Well, you get
+the idea.
+
+As a last little note, please make sure that all the documentation you
+turn in is true and accurate.  Otherwise, we will deduct points.
+
+*/
