@@ -83,6 +83,7 @@ public:
     }
     /**
      * @brief Perform algorithm and store results in our 2D memo table
+     * Time complexity : O( n^3 )
      * @return void
      */
     void compute()
@@ -195,6 +196,7 @@ private:
 
     /**
      * @brief Compute and mark in output string, the optimal pairing by looking at 2D memo table b/w indices i and j
+     * Time complexity : O( n^3 )
      *
      * @param i start index
      * @param j end index

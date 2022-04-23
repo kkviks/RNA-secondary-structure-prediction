@@ -10,11 +10,36 @@
 Objective: The objective of this assignment is to implement the RNA secondary structure prediction
 algorithm described in the class.
 
-Any additional comments you want to make can go here.  Did you like the
-project?  Was it too hard, too easy?  My TA smells bad.  Well, you get
-the idea.
+Input: RNA sequence
+Output: Optimial pairing of the bases for largest RNA secondary structure folding
 
-As a last little note, please make sure that all the documentation you
-turn in is true and accurate.  Otherwise, we will deduct points.
+
+Rules:
+
+Given a string over {A, T, C, G}, find the optimal set of base pairs i, j such that
+
+- (No sharp turns) The ends of each pair are separated by at least 4 intervening bases i.e. if (i , j) ε S, then i < j - 4
+- The elements in each pair in S consist of either {A,U} or {C,G} (in either order).
+- S is a matching: no base appears in more than one pair.
+- (No knots) If (i,j) and (k,l) are two pairs in S, then we cannot have i < k < j < l.
+
+Recurrence :  OPT(i,j) = max(OPT(i,j-1), max(1 + OPT(i,t-1) + OPT(t+1, j-1) where i< t< j and valid pairing))
+
+Complexity:
+
+ - Recursion in caluculing 2D memo table: O(n^3)
+ - Traceback: O(n^3)
+
+ Overall Time Complexity: O(n^3)
+
+Space:
+
+ - O(n) to store RNA sequence 
+ - O(n^2) for memoization table
+ - O(n) to store output string
+
+Overall Space Complexity: O(n^2)
+
+Assignment was fun overall and easier than Assignment 1
 
 */
